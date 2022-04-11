@@ -7,7 +7,7 @@ module.exports = server => {
     })
 
     server.get('/movies', (require, response) => {
-        const sql = '';
+        const sql = 'SELECT * FROM MOVIES';
         connection.query(sql, (error, res) => {
             if (error){
                 return error;
